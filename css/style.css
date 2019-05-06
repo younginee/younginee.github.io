@@ -81,12 +81,20 @@ main .group {
   margin-bottom: 10px;
 }
 
+main .group:last-of-type {
+  margin-bottom: 40px;
+}
+
 main p.group-title {
   font-size: 1em;
   font-weight: 500;
   line-height: 0.8em;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+main ul.group-item {
+
 }
 
 main ul.group-item .year {
