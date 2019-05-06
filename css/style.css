@@ -1,10 +1,10 @@
 html, body {
   margin:0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 1.5em;
-  color: #333F50;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: rgba(0,0,0,0.8);
 }
 
 
@@ -18,9 +18,23 @@ html, body {
 }
 
 ul {
+  display: block;
   list-style: none;
   padding:0;
   margin:0;
+  overflow: hidden;
+}
+
+ul.group-item li {
+  float: left;
+}
+
+ul.group-item li.year {
+  width: 25%;
+}
+
+ul.group-item li.exp {
+  width: 75%;
 }
 
 a {
@@ -30,14 +44,14 @@ a {
 
 .container {
   position:relative;
-  width: 440px;
+  width: 600px;
   max-width: 90%;
   margin: 0 auto;
 }
 
 .container .inner-wrap {
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 main {
@@ -51,21 +65,52 @@ main p {
 }
 
 main p.yi-name {
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: 500;
   line-height: 0.6em;
-  padding-top:20vh;
+  padding-top:10vh;
   padding-bottom: 40px;
 }
 
 main p.yi-description {
-  font-size: 0.8em;
+  font-size: 1.1em;
   line-height: 1.6em;
-  padding-bottom:10px;
+  padding-bottom:30px;
 }
 
+
+main .group {
+  margin-bottom: 10px;
 }
+
+main p.group-title {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 0.8em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+main ul.group-item .year {
+  color: rgba(0,0,0,0.6)
+}
+
+main ul.group-item .exp {
+
+}
+
+
+
 
 
 @media all and (max-width : 745px) {
+
+  ul.group-item li.year {
+    width: 100%;
+  }
+
+  ul.group-item li.exp {
+    width: 100%;
+  }
 
 }
